@@ -16,13 +16,9 @@
 		<cglib.version>2.2.2</cglib.version>
 	</properties>
 
-	<plugins>
-	<plugin>
-  		<groupId>org.eclipse.jetty</groupId>
-  		<artifactId>jetty-maven-plugin</artifactId>
-  		<version>9.2.9-SNAPSHOT</version>
-	</plugin>
-	</plugins>
+	
+
+
 	<dependencies>
 		<!-- Spring core & mvc -->
 		<dependency>
@@ -95,6 +91,11 @@
 					<source>${java.version}</source>
 					<target>${java.version}</target>
 				</configuration>
+			</plugin>
+			<plugin>
+		  		<groupId>org.mortbay.jetty</groupId>
+       		 	<artifactId>maven-jetty-plugin</artifactId>
+        		<version>6.1.10</version>
 			</plugin>
 		</plugins>
 	</build>
